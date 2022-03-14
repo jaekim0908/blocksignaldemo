@@ -13,7 +13,7 @@ import React, { useEffect, useState } from "react";
 import jwt from "jsonwebtoken";
 import { SettingsAccessibilityOutlined } from "@mui/icons-material";
 
-const home = (providers) => {
+const Home = (providers) => {
     
   const [currentAccount, setCurrentAccount] = useState("");
   
@@ -117,7 +117,7 @@ const home = (providers) => {
   );
 };
 
-export default home;
+export default Home;
 
 export async function getServerSideProps(context) {
   const providers = await getProviders();
