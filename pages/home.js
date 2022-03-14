@@ -5,6 +5,7 @@ import OndemandVideoSharpIcon from "@mui/icons-material/OndemandVideoSharp";
 import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
 import ArrowForwardIosRoundedIcon from "@mui/icons-material/ArrowForwardIosRounded";
 import ViewInArIcon from "@mui/icons-material/ViewInAr";
+import CurrencyBitcoinIcon from '@mui/icons-material/CurrencyBitcoin';
 import HeaderLink from "../components/HeaderLink";
 import Head from "next/head";
 import { getProviders, signIn } from "next-auth/react";
@@ -74,7 +75,7 @@ const Home = (providers) => {
             <HeaderLink Icon={ExploreIcon} text="Discover" />
             <HeaderLink Icon={GroupIcon} text="People" />
             <HeaderLink Icon={OndemandVideoSharpIcon} text="Learning" />
-            <HeaderLink Icon={BusinessCenterIcon} text="Jobs" />
+            <HeaderLink Icon={CurrencyBitcoinIcon} text="Crypto" />
           </div>
           <div className="pl-4">
             <button
@@ -91,11 +92,11 @@ const Home = (providers) => {
       <main className="flex flex-col xl:flex-row items-center max-w-screen-lg mx-auto">
         <div className="space-y-6 xl:space-y-10">
           <h1 className="text-3xl md:text-5xl text-amber-800/80 max-w-xl !leading-snug pl-4 xl:pl-0">
-            Welcome to your blockchain community
+            Welcome to your Blockchain community
           </h1>
           <div className="space-y-4">
             <div className="intent">
-              <h2 className="text-xl">Search for a job</h2>
+              <h2 className="text-xl">Search for a NFT community</h2>
               <ArrowForwardIosRoundedIcon className="text-gray-700" />
             </div>
             <div className="intent">
@@ -103,7 +104,7 @@ const Home = (providers) => {
               <ArrowForwardIosRoundedIcon className="text-gray-700" />
             </div>
             <div className="intent">
-              <h2 className="text-xl">Learn a new skill</h2>
+              <h2 className="text-xl">Learn a new Blockchain trend</h2>
               <ArrowForwardIosRoundedIcon className="text-gray-700" />
             </div>
           </div>
